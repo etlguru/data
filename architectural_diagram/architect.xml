@@ -1,0 +1,80 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="dashboard_pipeline" name="Dashboard Pipeline Architecture">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Source DB -->
+        <mxCell id="2" value="Source DB" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Debezium -->
+        <mxCell id="3" value="Debezium (CDC)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Kafka/Redpanda -->
+        <mxCell id="4" value="Kafka / Redpanda" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="410" y="120" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- AWS S3 -->
+        <mxCell id="5" value="AWS S3 (Raw/Staging)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="630" y="120" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Local Spark/dbt -->
+        <mxCell id="6" value="Local Spark / dbt" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="630" y="280" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Analytical DB -->
+        <mxCell id="7" value="Analytical DB (Local)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="410" y="280" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Dashboard Container -->
+        <mxCell id="8" value="Dashboard (Docker)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="220" y="280" width="140" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Users -->
+        <mxCell id="9" value="Users" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="120" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows -->
+        <mxCell id="10" style="endArrow=block;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="11" style="endArrow=block;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="12" style="endArrow=block;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="13" style="endArrow=block;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="14" style="endArrow=block;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="15" style="endArrow=block;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="16" style="endArrow=block;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+

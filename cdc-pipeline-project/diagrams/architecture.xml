@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel>
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="RDS (Source)" style="rounded=1;fillColor=#FFCC99;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="50" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="3" value="AWS DMS" style="rounded=1;fillColor=#99CCFF;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="200" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="S3 (Raw)" style="rounded=1;fillColor=#CCFFCC;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="350" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="AWS Glue" style="rounded=1;fillColor=#FFFF99;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="500" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="6" value="S3 (Staging)" style="rounded=1;fillColor=#CCFFCC;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="650" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="7" value="Redshift" style="rounded=1;fillColor=#FF9999;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="800" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="8" value="Dashboard" style="rounded=1;fillColor=#CCCCFF;strokeColor=#000000" vertex="1" parent="1">
+      <mxGeometry x="950" y="50" width="100" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="9" edge="1" source="2" target="3" style="edgeStyle=orthogonalEdgeStyle">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="10" edge="1" source="3" target="4" style="edgeStyle=orthogonalEdgeStyle">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="11" edge="1" source="4" target="5" style="edgeStyle=orthogonalEdgeStyle">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="12" edge="1" source="5" target="6" style="edgeStyle=orthogonalEdgeStyle">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="13" edge="1" source="6" target="7" style="edgeStyle=orthogonalEdgeStyle">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="14" edge="1" source="7" target="8" style="edgeStyle=orthogonalEdgeStyle">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
