@@ -41,7 +41,7 @@ resource "aws_db_instance" "source" {
   db_subnet_group_name  = aws_db_subnet_group.main.name
   skip_final_snapshot   = true
   db_name              = var.rds_database_name
-  publicly_accessible  = true  # Allows external access
+  publicly_accessible  = false  
 }
 
 resource "aws_db_subnet_group" "main" {

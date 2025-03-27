@@ -25,7 +25,7 @@ destroy:
 
 dags:
 	@echo "Copying DAGs to Airflow DAGs directory (update path as needed)"
-	# cp dags/*.py /path/to/airflow/dags/  # Uncomment and update path as needed
+	# cp dags/*.py ../..//airflow/dags/  # Uncomment and update path as needed
 
 clean:
 	rm -rf terraform/.terraform terraform/terraform.tfstate* terraform/.terraform.lock.hcl
